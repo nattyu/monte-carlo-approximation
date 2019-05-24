@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="mc.js"></script>
+    <title>モンテカルロ法によるπ近似</title>
+</head>
+<body>
+    <input type="text" id="textBox1" value="">
+    <button id="button" onclick="monte()">go</button>
+    <br>
+    <canvas id="canvas" width="400" height="400" style="background-color: yellow"></canvas>
+    <h1 id="PI"></h1>
+    <script type="text/javascript">
+        var cv = document.getElementById('canvas');
+        var ctx = cv.getContext('2d');
+        ctx.beginPath();
+        ctx.arc(0, 0, 400, 0, Math.PI / 2, false);
+        ctx.strokeStyle = "#ffffff";
+        ctx.lineWidth = 5;
+        ctx.stroke();
+    </script>
+</body>
+</html>
